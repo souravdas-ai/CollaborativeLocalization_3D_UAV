@@ -1,0 +1,10 @@
+<launch>
+        <group ns="mamba">
+        <node name="dot_finder" pkg="dot_finder" type="dot_finder" output="screen">
+            <param name="topic" value="/mamba" />
+            <param name="thresh_low" value="70" />
+            <param name="dilatation" value="20" />
+            <param name="erosion" value="10" />
+        </node>
+        </group>
+</launch>
